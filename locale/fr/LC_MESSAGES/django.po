@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-27 20:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+#: .\crm_app\templates\crm_app\base.html:5
+msgid "default_title"
+msgstr "Titre par défaut"
+
+msgid "h1_title"
+msgstr "Bienvenue"
+
+msgid "delete_client_title"
+msgstr "Supprimer le Client Définitivement"
+
+msgid "delete_client_confirm"
+msgstr "Êtes-vous sûr de vouloir supprimer"
+
+msgid "delete_confirm_button"
+msgstr "Confirmer"
+
+msgid "delete_cancel_link"
+msgstr "Annuler"
+
+msgid "client_details_title"
+msgstr "Détails du Client"
+
+msgid "client_name"
+msgstr "Nom :"
+
+msgid "client_address"
+msgstr "Adresse :"
+
+msgid "client_phone"
+msgstr "Téléphone :"
+
+msgid "client_email"
+msgstr "Email :"
+
+msgid "client_sector"
+msgstr "Secteur d'activité :"
+
+msgid "edit_client_link"
+msgstr "Modifier"
+
+msgid "delete_client_link"
+msgstr "Supprimer"
+
+msgid "create_client_title"
+msgstr "Créer un Client"
+
+msgid "create_client_heading"
+msgstr "Créer un Nouvel Élément"
+
+msgid "save_button"
+msgstr "Enregistrer"
+
+msgid "client_list_title"
+msgstr "Liste des Clients"
+
+msgid "create_new_client_link"
+msgstr "Créer un nouveau client"

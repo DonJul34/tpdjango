@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 11:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\crm_app\templates\crm_app\base.html:7
+
+
+msgid "default_title"
+msgstr ""
+
+msgid "h1_title"
+msgstr "Bienvenudo"
+
+#: .\crm_app\templates\crm_app\client_confirm_delete.html:5
+msgid "delete_client_title"
+msgstr "Borrar cliente"
+
+#: .\crm_app\templates\crm_app\client_confirm_delete.html:6
+msgid "delete_client_confirm"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_confirm_delete.html:9
+msgid "delete_confirm_button"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_confirm_delete.html:11
+msgid "delete_cancel_link"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:5
+msgid "client_details_title"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:6
+msgid "client_name"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:7
+msgid "client_address"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:8
+msgid "client_phone"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:9
+msgid "client_email"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:10
+msgid "client_sector"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:11
+msgid "edit_client_link"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_detail.html:12
+msgid "delete_client_link"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_form.html:5
+msgid "create_client_title"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_form.html:9
+msgid "create_client_heading"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_form.html:13
+msgid "save_button"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_list.html:5
+msgid "client_list_title"
+msgstr ""
+
+#: .\crm_app\templates\crm_app\client_list.html:13
+msgid "create_new_client_link"
+msgstr ""
+
+#: .\textgen\urls.py:29
+msgid "Bienvenue sur notre site !"
+msgstr ""

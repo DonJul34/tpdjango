@@ -1,0 +1,15 @@
+{% extends "crm_app/base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "create_client_title" %}
+{% endblock %}
+
+{% block content %}
+<h2>{% trans "create_client_heading" %}</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">{% trans "save_button" %}</button>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!-- templates/textgen/base.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Poésie</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'textgen/style.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-5">
+            <h1>Générateur de Poésie</h1>
+            <p>Un poème pour chaque instant.</p>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer class="text-center mt-5">
+            <p>© 2024 - Poésie générée par OpenAI</p>
+        </footer>
+    </div>
+</body>
+</html>

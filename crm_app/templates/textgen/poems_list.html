@@ -1,0 +1,21 @@
+<h2>Your Poems</h2>
+
+{% if poems %}
+    <ul>
+        {% for poem in poems %}
+            <li>
+                <p><strong>Poem ({{ poem.created_at }})</strong></p>
+                <p>{{ poem.text }}</p>
+                <p><em>Language: {{ poem.language }}</em></p>
+                {% if poem.category %}
+                    <p><strong>Category: </strong>{{ poem.category.name }}</p>
+                    <p><strong>Poems in this Category:</strong> {{ poem.num_poems_in_category }}</p>
+                {% else %}
+                    <p><strong>Category:</strong> None</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You don't have any poems yet.</p>
+{% endif %}

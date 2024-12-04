@@ -1,0 +1,14 @@
+{% extends 'crm_app/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "client_list_title" %}</h1>
+<ul>
+  {% for client in object_list %}
+  <li>
+    <a href="{{ client.id }}/">{{ client.nom }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<a href="new/">{% trans "create_new_client_link" %}</a>
+{% endblock %}

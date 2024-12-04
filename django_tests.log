@@ -1,0 +1,206 @@
+INFO 2024-11-27 21:23:07,128 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:23:07,129 tests Testing client create view
+ERROR 2024-11-27 21:23:07,171 tests Expected redirect (302) but got 200
+INFO 2024-11-27 21:23:07,188 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:23:07,189 tests Testing client list view
+INFO 2024-11-27 21:23:07,202 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:23:07,204 tests Testing client update view
+ERROR 2024-11-27 21:23:07,215 tests Expected redirect (302) but got 200
+INFO 2024-11-27 21:27:30,626 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:27:30,627 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:27:30,641 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:27:30,642 tests Testing API GET /clients/
+INFO 2024-11-27 21:27:30,648 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:27:30,649 tests Testing API POST /clients/
+INFO 2024-11-27 21:27:30,658 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:27:30,659 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:27:30,666 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:27:30,667 tests Testing client create view
+ERROR 2024-11-27 21:27:30,696 tests Form errors: <ul class="errorlist"><li>preferred_language<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+INFO 2024-11-27 21:27:30,699 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:27:30,700 tests Testing client delete view
+INFO 2024-11-27 21:27:30,708 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:27:30,709 tests Testing client list view
+INFO 2024-11-27 21:27:30,716 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:27:30,717 tests Testing client update view
+INFO 2024-11-27 21:27:30,726 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:27:30,727 tests Testing API GET /contacts/
+INFO 2024-11-27 21:27:30,731 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:27:30,732 tests Testing API POST /contacts/
+INFO 2024-11-27 21:28:44,732 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:28:44,733 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:28:44,749 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:28:44,750 tests Testing API GET /clients/
+INFO 2024-11-27 21:28:44,755 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:28:44,757 tests Testing API POST /clients/
+INFO 2024-11-27 21:28:44,764 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:28:44,765 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:28:44,771 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:28:44,772 tests Testing client create view
+INFO 2024-11-27 21:28:44,784 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:28:44,785 tests Testing client delete view
+INFO 2024-11-27 21:28:44,792 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:28:44,793 tests Testing client update view
+ERROR 2024-11-27 21:28:44,804 log Internal Server Error: /clients/1/edit/
+Traceback (most recent call last):
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+AttributeError: 'Client' object has no attribute 'get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 194, in post
+    return super().post(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 119, in get_success_url
+    "No URL to redirect to.  Either provide a url or define"
+django.core.exceptions.ImproperlyConfigured: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model.
+INFO 2024-11-27 21:28:44,860 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:28:44,861 tests Testing API GET /contacts/
+INFO 2024-11-27 21:28:44,867 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:28:44,869 tests Testing API POST /contacts/
+INFO 2024-11-27 21:29:29,806 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:29,808 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:29:29,824 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:29,824 tests Testing API GET /clients/
+INFO 2024-11-27 21:29:29,829 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:29,830 tests Testing API POST /clients/
+INFO 2024-11-27 21:29:29,841 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:29,841 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:29:29,848 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:29,849 tests Testing client create view
+INFO 2024-11-27 21:29:29,861 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:29,861 tests Testing client delete view
+INFO 2024-11-27 21:29:29,867 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:29,867 tests Testing client update view
+ERROR 2024-11-27 21:29:29,878 log Internal Server Error: /clients/1/edit/
+Traceback (most recent call last):
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 194, in post
+    return super().post(request, *args, **kwargs)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "D:\pyt-djan\tpcrm\django\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "D:\pyt-djan\tpcrm\crm_project\crm_app\models.py", line 20, in get_absolute_url
+    return reverse('client_detail', args=[str(self.id)])
+NameError: name 'reverse' is not defined
+INFO 2024-11-27 21:29:29,881 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:29:29,882 tests Testing API GET /contacts/
+INFO 2024-11-27 21:29:29,890 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:29:29,890 tests Testing API POST /contacts/
+INFO 2024-11-27 21:29:45,004 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:45,006 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:29:45,023 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:45,024 tests Testing API GET /clients/
+INFO 2024-11-27 21:29:45,028 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:45,029 tests Testing API POST /clients/
+INFO 2024-11-27 21:29:45,039 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:29:45,040 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:29:45,047 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:45,048 tests Testing client create view
+INFO 2024-11-27 21:29:45,062 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:45,062 tests Testing client delete view
+INFO 2024-11-27 21:29:45,072 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:29:45,072 tests Testing client update view
+INFO 2024-11-27 21:29:45,080 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:29:45,080 tests Testing API GET /contacts/
+INFO 2024-11-27 21:29:45,089 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:29:45,090 tests Testing API POST /contacts/
+INFO 2024-11-27 21:31:38,689 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:31:38,692 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:31:38,710 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:31:38,711 tests Testing API GET /clients/
+INFO 2024-11-27 21:31:38,717 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:31:38,719 tests Testing API POST /clients/
+INFO 2024-11-27 21:31:38,729 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:31:38,730 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:31:38,740 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:31:38,743 tests Testing client create view
+INFO 2024-11-27 21:31:38,753 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:31:38,755 tests Testing client delete view
+INFO 2024-11-27 21:31:38,762 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:31:38,763 tests Testing client update view
+INFO 2024-11-27 21:31:38,773 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:31:38,774 tests Testing API GET /contacts/
+INFO 2024-11-27 21:31:38,781 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:31:38,782 tests Testing API POST /contacts/
+INFO 2024-11-27 21:32:03,227 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:32:03,230 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:32:03,250 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:32:03,252 tests Testing API GET /clients/
+INFO 2024-11-27 21:32:03,261 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:32:03,262 tests Testing API POST /clients/
+INFO 2024-11-27 21:32:03,270 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:32:03,272 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:32:03,284 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:32:03,285 tests Testing client create view
+INFO 2024-11-27 21:32:03,347 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:32:03,348 tests Testing client delete view
+INFO 2024-11-27 21:32:03,360 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:32:03,361 tests Testing client update view
+INFO 2024-11-27 21:32:03,375 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:32:03,376 tests Testing API GET /contacts/
+INFO 2024-11-27 21:32:03,382 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:32:03,383 tests Testing API POST /contacts/
+INFO 2024-11-27 21:35:54,997 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:35:54,999 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:35:55,017 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:35:55,018 tests Testing API GET /clients/
+INFO 2024-11-27 21:35:55,026 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:35:55,027 tests Testing API POST /clients/
+INFO 2024-11-27 21:35:55,037 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:35:55,039 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:35:55,046 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:35:55,047 tests Testing client create view
+INFO 2024-11-27 21:35:55,059 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:35:55,061 tests Testing client delete view
+INFO 2024-11-27 21:35:55,070 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:35:55,072 tests Testing client update view
+INFO 2024-11-27 21:35:55,079 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:35:55,081 tests Testing API GET /contacts/
+INFO 2024-11-27 21:35:55,088 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:35:55,089 tests Testing API POST /contacts/
+INFO 2024-11-27 21:38:22,725 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:38:22,728 tests Testing API DELETE /clients/{id}/
+INFO 2024-11-27 21:38:22,748 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:38:22,750 tests Testing API GET /clients/
+INFO 2024-11-27 21:38:22,761 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:38:22,763 tests Testing API POST /clients/
+INFO 2024-11-27 21:38:22,775 tests Setting up test data for APIClientTests
+INFO 2024-11-27 21:38:22,777 tests Testing API PUT /clients/{id}/
+INFO 2024-11-27 21:38:22,787 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:38:22,789 tests Testing client create view
+INFO 2024-11-27 21:38:22,804 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:38:22,808 tests Testing client delete view
+INFO 2024-11-27 21:38:22,828 tests Setting up test data for ClientViewTests
+INFO 2024-11-27 21:38:22,830 tests Testing client update view
+INFO 2024-11-27 21:38:22,841 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:38:22,843 tests Testing API GET /contacts/
+INFO 2024-11-27 21:38:22,849 tests Setting up test data for ContactAPITests
+INFO 2024-11-27 21:38:22,852 tests Testing API POST /contacts/

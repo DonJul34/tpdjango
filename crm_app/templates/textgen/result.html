@@ -1,0 +1,28 @@
+<!-- templates/textgen/result.html -->
+{% extends 'textgen/base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h2>Poème généré :</h2>
+
+        {% if error %}
+            <div class="alert alert-danger">
+                <strong>Erreur :</strong> {{ error }}
+            </div>
+        {% else %}
+            <p class="lead">{{ poem }}</p>
+        {% endif %}
+
+        <form method="get" action="{% url 'generate_poetry' %}">
+            <button type="submit" class="btn btn-primary mt-3">Générer un nouveau poème</button>
+        </form>
+    </div>
+{% endblock %}
+<!-- Exemple dans base.html -->
+# Exemple dans models.py ou views.py
+
+from django.utils.translation import gettext as _
+
+def my_view(request):
+    message = _("Bienvenue sur notre site !")
+    # ...

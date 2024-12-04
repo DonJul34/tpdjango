@@ -1,0 +1,12 @@
+{% extends 'crm_app/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "delete_client_title" %}</h1>
+<p>{% trans "delete_client_confirm" %} {{ object.nom }} ?</p>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">{% trans "delete_confirm_button" %}</button>
+</form>
+<a href="{% url 'client_list' %}">{% trans "delete_cancel_link" %}</a>
+{% endblock %}

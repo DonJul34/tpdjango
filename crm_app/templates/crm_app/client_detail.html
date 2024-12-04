@@ -1,0 +1,13 @@
+{% extends 'crm_app/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "client_details_title" %}</h1>
+<p><strong>{% trans "client_name" %}</strong> {{ object.nom }}</p>
+<p><strong>{% trans "client_address" %}</strong> {{ object.adresse }}</p>
+<p><strong>{% trans "client_phone" %}</strong> {{ object.telephone }}</p>
+<p><strong>{% trans "client_email" %}</strong> {{ object.email }}</p>
+<p><strong>{% trans "client_sector" %}</strong> {{ object.secteur_activite }}</p>
+<a href="edit/">{% trans "edit_client_link" %}</a> | 
+<a href="delete/">{% trans "delete_client_link" %}</a>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load i18n %}
+
+    <meta charset="UTF-8">
+    <title>{% block title %}{% trans "default_title" %}{% endblock %}</title>
+</head>
+<body>
+  <H1>{% trans "h1_title" %}</h1>
+  <p>LANGUAGE_CODE: {{ request.LANGUAGE_CODE }}</p>
+
+  <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <select name="language" onchange="this.form.submit()">
+        <option value="fr" {% if request.LANGUAGE_CODE == 'fr' %}selected{% endif %}>🇫🇷 Français</option>
+        <option value="en" {% if request.LANGUAGE_CODE == 'en' %}selected{% endif %}>🇬🇧 English</option>
+        <option value="es" {% if request.LANGUAGE_CODE == 'es' %}selected{% endif %}>Espanol</option>
+    </select>
+</form>
+
+
+
+
+  
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% block content %}{% endblock %}
+</body>
+</html>
